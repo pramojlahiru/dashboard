@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332883334058",
+    "firebase_url": "https://covid19-updates-srilanka.firebaseio.com",
+    "project_id": "covid19-updates-srilanka",
+    "storage_bucket": "covid19-updates-srilanka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332883334058:android:f66140a57a9bce98aad1d3",
+        "android_client_info": {
+          "package_name": "com.clivekumara.slcovid19updates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332883334058-p5q5vbh50f9qu248qt0kipfs2c9j66nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4FBJPVD4lk5F-4jJfMALLAXKCy7oWH2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332883334058-p5q5vbh50f9qu248qt0kipfs2c9j66nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
