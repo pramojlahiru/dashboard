@@ -396,59 +396,59 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
 
-            _buildTile(
-              Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Grid Of Total Cases',
-                                  style: TextStyle(color: Colors.green)),
-                              Text('\$16K',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 34.0)),
-                            ],
-                          ),
-                          DropdownButton(
-                              isDense: true,
-                              value: actualDropdown,
-                              onChanged: (String value) => setState(() {
-                                    actualDropdown = value;
-                                    actualChart = chartDropdownItems
-                                        .indexOf(value); // Refresh the chart
-                                  }),
-                              items: chartDropdownItems.map((String title) {
-                                return DropdownMenuItem(
-                                  value: title,
-                                  child: Text(title,
-                                      style: TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 14.0)),
-                                );
-                              }).toList())
-                        ],
-                      ),
-                      Padding(padding: EdgeInsets.only(bottom: 4.0)),
-                      Sparkline(
-                        data: charts[actualChart],
-                        lineWidth: 5.0,
-                        lineColor: Colors.greenAccent,
-                      )
-                    ],
-                  )),
-            ),
+            // _buildTile(
+            //   Padding(
+            //       padding: const EdgeInsets.all(24.0),
+            //       child: Column(
+            //         mainAxisAlignment: MainAxisAlignment.start,
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: <Widget>[
+            //           Row(
+            //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //             crossAxisAlignment: CrossAxisAlignment.start,
+            //             children: <Widget>[
+            //               Column(
+            //                 mainAxisAlignment: MainAxisAlignment.start,
+            //                 crossAxisAlignment: CrossAxisAlignment.start,
+            //                 children: <Widget>[
+            //                   Text('Grid Of Total Cases',
+            //                       style: TextStyle(color: Colors.green)),
+            //                   Text('\$16K',
+            //                       style: TextStyle(
+            //                           color: Colors.black,
+            //                           fontWeight: FontWeight.w700,
+            //                           fontSize: 34.0)),
+            //                 ],
+            //               ),
+            //               DropdownButton(
+            //                   isDense: true,
+            //                   value: actualDropdown,
+            //                   onChanged: (String value) => setState(() {
+            //                         actualDropdown = value;
+            //                         actualChart = chartDropdownItems
+            //                             .indexOf(value); // Refresh the chart
+            //                       }),
+            //                   items: chartDropdownItems.map((String title) {
+            //                     return DropdownMenuItem(
+            //                       value: title,
+            //                       child: Text(title,
+            //                           style: TextStyle(
+            //                               color: Colors.blue,
+            //                               fontWeight: FontWeight.w400,
+            //                               fontSize: 14.0)),
+            //                     );
+            //                   }).toList())
+            //             ],
+            //           ),
+            //           Padding(padding: EdgeInsets.only(bottom: 4.0)),
+            //           Sparkline(
+            //             data: charts[actualChart],
+            //             lineWidth: 5.0,
+            //             lineColor: Colors.greenAccent,
+            //           )
+            //         ],
+            //       )),
+            // ),
 
             SizedBox(height: 20),
 
@@ -489,59 +489,59 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
 
-            _buildTile(
-              Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Grid Of Total Cases',
-                                  style: TextStyle(color: Colors.green)),
-                              Text('\$16K',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 34.0)),
-                            ],
-                          ),
-                          DropdownButton(
-                              isDense: true,
-                              value: actualDropdown,
-                              onChanged: (String value) => setState(() {
-                                    actualDropdown = value;
-                                    actualChart = chartDropdownItems
-                                        .indexOf(value); // Refresh the chart
-                                  }),
-                              items: chartDropdownItems.map((String title) {
-                                return DropdownMenuItem(
-                                  value: title,
-                                  child: Text(title,
-                                      style: TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 14.0)),
-                                );
-                              }).toList())
-                        ],
-                      ),
-                      Padding(padding: EdgeInsets.only(bottom: 4.0)),
-                      Sparkline(
-                        data: charts[actualChart],
-                        lineWidth: 5.0,
-                        lineColor: Colors.greenAccent,
-                      )
-                    ],
-                  )),
-            ),
+            // _buildTile(
+            //   Padding(
+            //       padding: const EdgeInsets.all(24.0),
+            //       child: Column(
+            //         mainAxisAlignment: MainAxisAlignment.start,
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: <Widget>[
+            //           Row(
+            //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //             crossAxisAlignment: CrossAxisAlignment.start,
+            //             children: <Widget>[
+            //               Column(
+            //                 mainAxisAlignment: MainAxisAlignment.start,
+            //                 crossAxisAlignment: CrossAxisAlignment.start,
+            //                 children: <Widget>[
+            //                   Text('Grid Of Total Cases',
+            //                       style: TextStyle(color: Colors.green)),
+            //                   Text('\$16K',
+            //                       style: TextStyle(
+            //                           color: Colors.black,
+            //                           fontWeight: FontWeight.w700,
+            //                           fontSize: 34.0)),
+            //                 ],
+            //               ),
+            //               DropdownButton(
+            //                   isDense: true,
+            //                   value: actualDropdown,
+            //                   onChanged: (String value) => setState(() {
+            //                         actualDropdown = value;
+            //                         actualChart = chartDropdownItems
+            //                             .indexOf(value); // Refresh the chart
+            //                       }),
+            //                   items: chartDropdownItems.map((String title) {
+            //                     return DropdownMenuItem(
+            //                       value: title,
+            //                       child: Text(title,
+            //                           style: TextStyle(
+            //                               color: Colors.blue,
+            //                               fontWeight: FontWeight.w400,
+            //                               fontSize: 14.0)),
+            //                     );
+            //                   }).toList())
+            //             ],
+            //           ),
+            //           Padding(padding: EdgeInsets.only(bottom: 4.0)),
+            //           Sparkline(
+            //             data: charts[actualChart],
+            //             lineWidth: 5.0,
+            //             lineColor: Colors.greenAccent,
+            //           )
+            //         ],
+            //       )),
+            // ),
 
             SizedBox(height: 20),
             // total recovered
@@ -581,59 +581,59 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
 
-            _buildTile(
-              Padding(
-                  padding: const EdgeInsets.all(24.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Grid Of Total Cases',
-                                  style: TextStyle(color: Colors.green)),
-                              Text('\$16K',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 34.0)),
-                            ],
-                          ),
-                          DropdownButton(
-                              isDense: true,
-                              value: actualDropdown,
-                              onChanged: (String value) => setState(() {
-                                    actualDropdown = value;
-                                    actualChart = chartDropdownItems
-                                        .indexOf(value); // Refresh the chart
-                                  }),
-                              items: chartDropdownItems.map((String title) {
-                                return DropdownMenuItem(
-                                  value: title,
-                                  child: Text(title,
-                                      style: TextStyle(
-                                          color: Colors.blue,
-                                          fontWeight: FontWeight.w400,
-                                          fontSize: 14.0)),
-                                );
-                              }).toList())
-                        ],
-                      ),
-                      Padding(padding: EdgeInsets.only(bottom: 4.0)),
-                      Sparkline(
-                        data: charts[actualChart],
-                        lineWidth: 5.0,
-                        lineColor: Colors.greenAccent,
-                      )
-                    ],
-                  )),
-            ),
+            // _buildTile(
+            //   Padding(
+            //       padding: const EdgeInsets.all(24.0),
+            //       child: Column(
+            //         mainAxisAlignment: MainAxisAlignment.start,
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: <Widget>[
+            //           Row(
+            //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //             crossAxisAlignment: CrossAxisAlignment.start,
+            //             children: <Widget>[
+            //               Column(
+            //                 mainAxisAlignment: MainAxisAlignment.start,
+            //                 crossAxisAlignment: CrossAxisAlignment.start,
+            //                 children: <Widget>[
+            //                   Text('Grid Of Total Cases',
+            //                       style: TextStyle(color: Colors.green)),
+            //                   Text('\$16K',
+            //                       style: TextStyle(
+            //                           color: Colors.black,
+            //                           fontWeight: FontWeight.w700,
+            //                           fontSize: 34.0)),
+            //                 ],
+            //               ),
+            //               DropdownButton(
+            //                   isDense: true,
+            //                   value: actualDropdown,
+            //                   onChanged: (String value) => setState(() {
+            //                         actualDropdown = value;
+            //                         actualChart = chartDropdownItems
+            //                             .indexOf(value); // Refresh the chart
+            //                       }),
+            //                   items: chartDropdownItems.map((String title) {
+            //                     return DropdownMenuItem(
+            //                       value: title,
+            //                       child: Text(title,
+            //                           style: TextStyle(
+            //                               color: Colors.blue,
+            //                               fontWeight: FontWeight.w400,
+            //                               fontSize: 14.0)),
+            //                     );
+            //                   }).toList())
+            //             ],
+            //           ),
+            //           Padding(padding: EdgeInsets.only(bottom: 4.0)),
+            //           Sparkline(
+            //             data: charts[actualChart],
+            //             lineWidth: 5.0,
+            //             lineColor: Colors.greenAccent,
+            //           )
+            //         ],
+            //       )),
+            // ),
             _buildTile(
               Padding(
                 padding: const EdgeInsets.all(24.0),
@@ -676,13 +676,13 @@ class _MainPageState extends State<MainPage> {
             StaggeredTile.extent(1, 200.0),
             StaggeredTile.extent(2, 10.0),
             StaggeredTile.extent(2, 150.0),
-            StaggeredTile.extent(2, 220.0),
+            //StaggeredTile.extent(2, 220.0),
             StaggeredTile.extent(2, 10.0),
             StaggeredTile.extent(2, 150.0),
-            StaggeredTile.extent(2, 220.0),
+            //StaggeredTile.extent(2, 220.0),
             StaggeredTile.extent(2, 10.0),
             StaggeredTile.extent(2, 150.0),
-            StaggeredTile.extent(2, 220.0),
+            //StaggeredTile.extent(2, 220.0),
             //StaggeredTile.extent(2, 110.0),
           ],
         ));
