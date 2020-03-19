@@ -1,4 +1,5 @@
 import 'package:dashboard/classes/corona_result.dart';
+import 'package:dashboard/classes/stat-result.dart';
 import 'package:dashboard/utils/api_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sparkline/flutter_sparkline.dart';
@@ -234,6 +235,7 @@ class _MainPageState extends State<MainPage> {
     super.initState();
 
     // call to get data from rest api
+    //_fetchCoronaStats();
     _fetchCoronaCounts();
   }
 
@@ -707,6 +709,15 @@ class _MainPageState extends State<MainPage> {
     new ApiService().fetchCoronaData().then((Data value) {
       setState(() {
         this._coronaData = value;
+      });
+    });
+  }
+
+  void _fetchCoronaStats() {
+    new ApiService().fetchCoronaStat().then((List<StatResult> value) {
+      print(value);
+      setState(() {
+        // this._coronaData = value;
       });
     });
   }
