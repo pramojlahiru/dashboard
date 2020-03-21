@@ -721,4 +721,8 @@ class _MainPageState extends State<MainPage> {
       });
     });
   }
+
+  void printString(){
+    print('hello world');
+  }
 }
